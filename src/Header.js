@@ -1,19 +1,29 @@
 import React from 'react'
-import styled from 'styled-componenents';
+import styled from 'styled-components';
 
 function Header() {
     return (
-        <div>
+        <Container>
            <HeaderLogo> 
-
+                <h1>Fingertips</h1>
             </HeaderLogo>
-        </div>
+        
+        </Container>
     )
 }
 
-export default Header
+export default Header;
+
+const Container =styled.div`
+height:60px;
+background-color:#4DA1A9;
+display:flex;
+align-items:center;
+`
 
 const HeaderLogo = styled.div`
-height:60px;
-background-color:#0F1111;
+h1{
+    width:100px;
+    margin-left:10px;
+}
 `
